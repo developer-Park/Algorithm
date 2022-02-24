@@ -1,0 +1,1 @@
+console.alert("Hello World");
