@@ -129,3 +129,53 @@ for(let i = 1; i<=inputData[0]; i++) {
     
 }
 
+
+//5 
+//1 1 Case #1: 1 + 1 = 2
+//2 3 Case #2: 2 + 3 = 5
+//3 4 Case #3: 3 + 4 = 7
+//9 8 Case #4: 9 + 8 = 17
+//5 2 Case #5: 5 + 2 = 7
+
+
+const fs = require('fs');
+const inputData = fs.readFileSync(0, 'utf8').toString().split("\n");
+
+const T = inputData[0];
+
+for(let i = 1; i<=T; i++) {
+    let AB = inputData[i].split(' '); 
+    let A = parseInt(AB[0]);
+    let B = parseInt(AB[1]);
+   
+    console.log(`Case #${i}: ${A} + ${B} = ${A + B}`);
+  
+}
+
+//Hello           Hello
+//Baekjoon        Baekjoon 
+//Online Judge    Online Judge
+
+
+
+let input = require('fs').readFileSync('/dev/stdin').toString();
+
+console.log(input);
+
+//11720
+//5
+//54321   =  15
+
+let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
+
+let A = parseInt(input[0]);
+let B = input[1].split("");
+let sum = 0;
+
+for (let i = 0; i<A; i++) {
+
+    sum += parseInt(B[i]);
+}
+
+console.log(sum);
+

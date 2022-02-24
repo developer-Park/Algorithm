@@ -1,11 +1,14 @@
-const fs = require('fs');
-const inputData = fs.readFileSync(0, 'utf8').toString().split("\n");
 
-const T = inputData[0];
+let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
 
-for(let i = 1; i<=T; i++) {
-    let AB = inputData[i].split(" "); 
+let A = parseInt(input[0]);
+let B = input[1].split("");
+let sum = 0;
 
+for (let i = 0; i<A; i++) {
 
-    console.log("Case #" + T + ": " + parseInt(AB[0]) + parseInt(AB[1]));
+    sum += parseInt(B[i]);
 }
+
+console.log(sum);
+
