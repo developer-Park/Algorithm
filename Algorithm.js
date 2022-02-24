@@ -83,8 +83,49 @@ const inputData = fs.readFileSync(0, 'utf8').toString().trim().split("\n");
 
 
 for(let i = 0; i < inputData.length - 1; i++) {
-    let AB = inputData[i].split(' ').map(v => v * 1); 
+    let AB = inputData[i].split(' '); 
   
     console.log(parseInt(AB[0]) + parseInt(AB[1]));
+}
+
+//5
+//1 , 1       2
+//2 , 3       5
+//3 , 4       7
+//9 , 8       1
+//5 , 2       7
+//0 , 0 
+
+
+
+const fs = require('fs');
+const inputData = fs.readFileSync(0, 'utf8').toString().split("\n");
+
+const T = inputData[0];
+
+for(let i = 1; i<=T; i++) {
+    let AB = inputData[i].split(","); 
+
+
+    console.log(parseInt(AB[0]) + parseInt(AB[1]));
+}
+
+//5 
+//1 1 Case #1: 2
+//2 3 Case #2: 5
+//3 4 Case #3: 7
+//9 8 Case #4: 17
+//5 2 Case #5: 7
+
+
+
+const fs = require('fs');
+const inputData = fs.readFileSync(0, 'utf8').toString().split("\n");
+
+for(let i = 1; i<=inputData[0]; i++) {
+    let AB = inputData[i].split(' '); 
+
+  console.log(`Case #${i}: ${parseInt(AB[0]) + parseInt(AB[1])}`);
+    
 }
 
