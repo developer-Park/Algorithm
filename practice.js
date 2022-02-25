@@ -1,14 +1,12 @@
 
-let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
+        
+let input = Number(require('fs').readFileSync('/dev/stdin').sort().reverse.toString());
 
-let A = parseInt(input[0]);
-let B = input[1].split("");
-let sum = 0;
+let answer = '';
 
-for (let i = 0; i<A; i++) {
-
-    sum += parseInt(B[i]);
+for (let i = 1; i <= input; i++) {
+    answer += i + "\n";
 }
 
-console.log(sum);
+console.log(answer);
 
