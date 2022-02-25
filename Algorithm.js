@@ -266,3 +266,9 @@ let result = new Date(`2017-${input[0]}-${input[1]}`);
 result.setDate(result.getDate()+1);
 
 console.log(result.toString().split(' ')[0].toUpperCase());
+
+//other answer
+
+let input = require("fs").readFileSync('/dev/stdin').toString().split(' ');
+let day = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+console.log(day[new Date("2018-"+input[0]+"-"+input[1]).getDay()]);

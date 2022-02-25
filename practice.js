@@ -1,12 +1,17 @@
-
-        
-let input = require('fs').readFileSync('/dev/stdin').toString().split(''));
-
-let result = new Date(`2007-${input[0]}-${input[1]}`);
-
-result.setDate(result.getDate()+1);
-
-console.log(result.toString().split('')[0].toUpperCase());
+for (let i = 1; i < input; i++) {
+    
+    console.log(`${num} * ${i} = ${num * i}`);
+}
 
 
+for(let x = 2; x <=input; x++)
+
+prenumber = [n - 1];
+
+if(x%3==0) {
+  x = x - 1;
+
+} else if (x%2==0) {
+    x = x - 1;
+}
 
