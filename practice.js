@@ -1,13 +1,12 @@
 
         
-let input = Number(require('fs').readFileSync('/dev/stdin').sort().reverse.toString());
+let input = require('fs').readFileSync('/dev/stdin').toString().split(''));
 
-let num = Number(input[0]);
+let result = new Date(`2007-${input[0]}-${input[1]}`);
 
-for (let i = 1; i < 10; i++) {
-    
-    answer +="i" +"j" + i * j + "\n";
-}
+result.setDate(result.getDate()+1);
 
-console.log(answer);
+console.log(result.toString().split('')[0].toUpperCase());
+
+
 
