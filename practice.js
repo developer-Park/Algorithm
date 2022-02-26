@@ -1,17 +1,5 @@
-for (let i = 1; i < input; i++) {
-    
-    console.log(`${num} * ${i} = ${num * i}`);
-}
+let input = require('fs').readFileSync('/dev/stdin').toString().split(' ');
 
+let n = parseInt(input);
 
-for(let x = 2; x <=input; x++)
-
-prenumber = [n - 1];
-
-if(x%3==0) {
-  x = x - 1;
-
-} else if (x%2==0) {
-    x = x - 1;
-}
-
+console.log((n * (n+1))/2);

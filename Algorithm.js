@@ -272,3 +272,24 @@ console.log(result.toString().split(' ')[0].toUpperCase());
 let input = require("fs").readFileSync('/dev/stdin').toString().split(' ');
 let day = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 console.log(day[new Date("2018-"+input[0]+"-"+input[1]).getDay()]);
+
+
+
+// John got a bad mark in math. The teacher 
+// gave him another task. John is to write 
+// a program which computes the sum of integers 
+// from 1 to n. If he manages to present a correct 
+// program, the bad mark will be cancelled.
+
+// Write a program which:
+
+// reads the number n from the standard input,
+// computes the sum of integers from 1 to n,
+// writes the answer to the standard output.
+
+
+let input = require('fs').readFileSync('/dev/stdin').toString().split(' ');
+
+let n = parseInt(input);
+
+console.log((n * (n+1))/2);
