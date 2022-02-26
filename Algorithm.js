@@ -1,5 +1,7 @@
 // Basic input //
 
+//2557
+
 console.log("Hello World!");
 
 
@@ -41,7 +43,7 @@ console.log(A+B);
 //5 2       7
 
 const fs = require('fs');
-const inputData = fs.readFileSync(0, 'utf8').toString().split("\n");
+const inputData = fs.readFileSync(0, 'utf8').toString().split('\n');
 
 const T = inputData[0];
 
@@ -59,7 +61,7 @@ for(let i = 1; i<=T; i++) {
 //5 2       7
 
 const fs = require('fs');
-const inputData = fs.readFileSync(0, 'utf8').toString().split("\n");
+const inputData = fs.readFileSync(0, 'utf8').toString().split('\n');
 
 
 
@@ -136,7 +138,7 @@ for(let i = 1; i<=inputData[0]; i++) {
 //3 4 Case #3: 3 + 4 = 7
 //9 8 Case #4: 9 + 8 = 17
 //5 2 Case #5: 5 + 2 = 7
-
+// 11720
 
 const fs = require('fs');
 const inputData = fs.readFileSync(0, 'utf8').toString().split("\n");
@@ -166,6 +168,8 @@ console.log(input);
 //5
 //54321   =  15
 
+
+
 let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
 
 let A = parseInt(input[0]);
@@ -186,6 +190,8 @@ console.log(sum);
         //4
         //5
 
+        //2741
+
 
 let input = Number(require('fs').readFileSync('/dev/stdin').toString());
 
@@ -203,6 +209,8 @@ console.log(answer);
         //3
         //2
         //1
+
+        //2742
 
 
 let input = Number(require('fs').readFileSync('/dev/stdin').toString());
@@ -226,6 +234,8 @@ console.log(answer);
     //2*7=14
     //2*8=16
     //2*9==18
+
+    //2739
 
             
 let input = require('fs').readFileSync('/dev/stdin').toString();
@@ -259,6 +269,8 @@ for (let i = 1; i < 10; i++) {
 // 9 2      Sun
 //12 25     Tue
 
+//1924
+
 
 let input = require('fs').readFileSync('/dev/stdin').toString().split(' ');
 let result = new Date(`2017-${input[0]}-${input[1]}`);
@@ -287,6 +299,8 @@ console.log(day[new Date("2018-"+input[0]+"-"+input[1]).getDay()]);
 // computes the sum of integers from 1 to n,
 // writes the answer to the standard output.
 
+//8393
+
 
 let input = require('fs').readFileSync('/dev/stdin').toString().split(' ');
 
@@ -299,6 +313,8 @@ console.log((n * (n+1))/2);
 //20 10 35 30 7
 
 //min : 7 max : 35
+
+//10818
 
 let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
 
