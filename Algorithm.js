@@ -90,6 +90,8 @@ for(let i = 0; i < inputData.length - 1; i++) {
     console.log(parseInt(AB[0]) + parseInt(AB[1]));
 }
 
+
+//10950
 //5
 //1 , 1       2
 //2 , 3       5
