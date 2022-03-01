@@ -332,7 +332,7 @@ for(let i=1; i<count; i++){
 }
 console.log(`${min} ${max}`);
 
-
+// 2438
 
 //5
 
@@ -341,7 +341,7 @@ console.log(`${min} ${max}`);
 //***
 //****
 //*****
-// 2438
+
 
 let input = require('fs').readFileSync('/dev/stdin').toString();
 
@@ -353,4 +353,30 @@ for(let i=0; i<input; i++){
 
 }
 
-//
+
+// 2439
+
+//5
+
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+
+
+
+let input = require('fs').readFileSync('/dev/stdin').toString();
+
+let num = Number(input);
+
+for (let i = 0; i < num; i++) {
+  let star = '';
+    
+  for (let j = num - 1; j >= 0; j--) {
+    star += j <= i ? '*' : ' ';
+  }
+  
+  console.log(star);
+}
