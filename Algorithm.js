@@ -331,3 +331,26 @@ for(let i=1; i<count; i++){
   if(min > numbers[i]) min = numbers[i];    
 }
 console.log(`${min} ${max}`);
+
+
+
+//5
+
+//*
+//**
+//***
+//****
+//*****
+// 2438
+
+let input = require('fs').readFileSync('/dev/stdin').toString();
+
+let star = "";
+
+for(let i=0; i<input; i++){
+  star += "*";
+  console.log(star);
+
+}
+
+//
