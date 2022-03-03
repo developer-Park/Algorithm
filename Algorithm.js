@@ -420,6 +420,27 @@ const input = require('fs').readFileSync('/dev/stdin').toString();
 let num = Number(input);
 
 for (let i = 0; i < num; i++) {
-    console.log(' '.repeat(i) + '*'.repeat(num - i));
+    console.log(' '.repeat(i) + '*'.repeat( 2 * num - i));
 }
 
+//2442
+//5
+//    *
+//   ***
+//  *****
+// *******
+//*********
+
+
+const input = Number(require('fs').readFileSync('/dev/stdin').toString());
+
+
+
+let star = '';
+
+for(let i=1; i<=input; i++){
+  star += ' '.repeat(input - i) + '*'.repeat(i * 2 - 1) + '\n';
+
+}
+
+console.log(star);

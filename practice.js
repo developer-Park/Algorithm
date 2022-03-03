@@ -1,7 +1,12 @@
-const input = require('fs').readFileSync('/dev/stdin').toString();
+const input = parseInt(require('fs').readFileSync('/dev/stdin').toString());
 
-let num = Number(input);
 
-for (let i = 0; i < num; i++) {
-    console.log(' '.repeat(i) + '*'.repeat(num - i));
+
+let star = '';
+
+for(let i=1; i<=input; i++){
+  star += ' '.repeat(input - i) + '*'.repeat(i * 2 - 1) + '\n';
+
 }
+
+console.log(star);
