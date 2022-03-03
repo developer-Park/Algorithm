@@ -432,14 +432,14 @@ for (let i = 0; i < num; i++) {
 //*********
 
 
-const input = Number(require('fs').readFileSync('/dev/stdin').toString());
+const input = require('fs').readFileSync('/dev/stdin').toString();
 
-
+let num = Number(input);
 
 let star = '';
 
-for(let i=1; i<=input; i++){
-  star += ' '.repeat(input - i) + '*'.repeat(i * 2 - 1) + '\n';
+for(let i=0; i<num; i++){
+  star += ' '.repeat(num - i) + '*'.repeat(i * 2 - 1) + '\n';
 
 }
 
