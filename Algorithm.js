@@ -431,16 +431,40 @@ for (let i = 0; i < num; i++) {
 // *******
 //*********
 
+const input = Number(require('fs').readFileSync('/dev/stdin').toString());
 
-const input = require('fs').readFileSync('/dev/stdin').toString();
-
-let num = Number(input);
 
 let star = '';
 
-for(let i=0; i<num; i++){
-  star += ' '.repeat(num - i) + '*'.repeat(i * 2 - 1) + '\n';
+for(let i=1; i<=input; i++){
+  star += ' '.repeat(input - i) + '*'.repeat(i * 2 - 1) + '\n';
 
 }
 
 console.log(star);
+
+//2445
+//5
+// *        *
+// **      **
+// ***    ***
+// ****  ****
+// **********
+// ****  ****
+// ***    ***
+// **      **
+// *        *
+
+const input = require('fs').readFileSync('/dev/stdin').toString();
+
+for (let i=1; i <= input; i++) {
+    stars = '*'.repeat(i) + ' '.repeat(input-i);
+    stars += stars.split('').reverse().join('');
+    console.log(stars);
+}
+
+for (let i=1; i < input; i++) {
+    stars = '*'.repeat(input-i) + ' '.repeat(i);
+    stars += stars.split('').reverse().join('');
+    console.log(stars);
+}
