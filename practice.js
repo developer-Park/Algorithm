@@ -1,12 +1,12 @@
-let input = require('fs').readFileSync('/dev/stdin').toString();
+let input = Number(require('fs').readFileSync('/dev/stdin').toString());
 
 let A = '';
 
 
-for(let i = 0; i <= input.length-1; i++) {
+for(let i = 1; i <= 9; i++) {
 
 
-    A += i + '\n';
+    A += `${input} * ${i} = ${input * i}`.split('\n');
     
 
 }

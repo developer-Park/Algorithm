@@ -22,3 +22,21 @@ for (let i = 1; i < 10; i++) {
     
     console.log(`${num} * ${i} = ${num * i}`);
 }
+
+
+///////////////////////////////////////////////
+
+
+let input = Number(require('fs').readFileSync('/dev/stdin').toString());
+
+
+
+
+for(let i = 1; i <= 9; i++) {
+
+let A = '';
+    A += `${input} * ${i} = ${input * i}`;
+    console.log(A);
+   
+}
+
