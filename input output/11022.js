@@ -21,3 +21,27 @@ for(let i = 1; i<=T; i++) {
     console.log(`Case #${i}: ${A} + ${B} = ${A + B}`);
   
 }
+
+
+/////////////////////////////////////////////////////
+
+let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
+
+let T = input[0];
+
+for (let i = 1; i<=T; i++) {
+
+    let AB = input[i].split(' ');
+
+    let a = parseInt(AB[0]);
+    let b = parseInt(AB[1]);
+    console.log(`Case #${i}: ${a} + ${b} = ${a+b}`);
+
+
+}
+
+
+
+
+
+

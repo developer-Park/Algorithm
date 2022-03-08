@@ -18,3 +18,13 @@ for(let i = 0; i < inputData.length - 1; i++) {
   
     console.log(parseInt(AB[0]) + parseInt(AB[1]));
 }
+
+/////////////////////////////////////////////////////////////////
+
+let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
+
+for (let i = 0; i < input.length - 2; i++) {
+    let AB = input[i].split(' ');
+    
+    console.log(parseInt(AB[0]) + parseInt(AB[1]));
+}

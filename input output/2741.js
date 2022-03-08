@@ -19,3 +19,22 @@ for (let i = 1; i <= input; i++) {
 }
 
 console.log(answer);
+
+
+/////////////////////////////
+
+
+let input = require('fs').readFileSync('/dev/stdin').toString();
+
+let A = '';
+
+
+for(let i = 1; i <= input; i++) {
+
+
+    A += i + '\n';
+    
+
+}
+
+console.log(A);

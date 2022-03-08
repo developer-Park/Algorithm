@@ -22,3 +22,27 @@ for (let i = 0; i<A; i++) {
 }
 
 console.log(sum);
+
+//////////////////////////////
+
+
+let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
+
+let T = input[0];
+let A = input[1];
+let sum = 0;
+
+for (let i = 0; i<T; i++) {
+ 
+    
+sum+= parseInt(A[i]);
+
+
+}
+
+
+console.log(sum);
+
+
+
+

@@ -24,3 +24,28 @@ for(let i = 1; i<=T; i++) {
 
     console.log(parseInt(AB[0]) + parseInt(AB[1]));
 }
+
+///////////////////////////////////////////////
+
+
+let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
+
+let T = input[0];
+
+for(let i = 1; i<=T; i++){
+
+    let ab= input[i].split(' ');
+    let a = parseInt(ab[0]);
+    let b = parseInt(ab[1]);
+
+   
+console.log(a+b);
+
+
+}
+
+
+
+
+
+

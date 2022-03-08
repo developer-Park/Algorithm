@@ -1,13 +1,14 @@
-const input = Number(require('fs').readFileSync('/dev/stdin').toString());
+let input = require('fs').readFileSync('/dev/stdin').toString();
 
-let star = '';
+let A = '';
 
-for (let i = 0; i < input; i++) {
-    for (let j = 0; j < input - i - 1; j++)
-        star = star + ' ';
-    for (let j = 0; j < i + 1; j++)
-        star = star + "* ";
-    star = star + "\n";
+
+for(let i = 0; i <= input.length-1; i++) {
+
+
+    A += i + '\n';
+    
+
 }
-console.log(star);
 
+console.log(A);
