@@ -8,10 +8,8 @@
 //5 2 Case #5: 7
 
 
-
-const fs = require('fs');
-const inputData = fs.readFileSync(0, 'utf8').toString().split("\n");
-
+ 
+let inputData = require('fs').readFileSync('/dev/stdin').toString().split('\n');
 for(let i = 1; i<=inputData[0]; i++) {
     let AB = inputData[i].split(' '); 
 
