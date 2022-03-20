@@ -6,9 +6,9 @@ let A = '';
 for(let i = 1; i <= 9; i++) {
 
 
-    A += `${input} * ${i} = ${input * i}`.split('\n');
+    A += `${input} * ${i} = ${input * i}`;
     
-
+   
 }
 
 console.log(A);
