@@ -11,7 +11,7 @@ for(var i=2; i<=inputs; i++){
 }
 console.log(dp[inputs].reduce((a,v)=> a+v, 0) % 10007);
 
-
+//
 
 ///////////////////////
 
