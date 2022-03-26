@@ -13,13 +13,10 @@ const inputData = fs.readFileSync(0, 'utf8').toString().trim().split("\n");
 
 
 
-for(let i = 0; i < inputData.length - 1; i++) {
-    let AB = inputData[i].split(' '); 
-  
-    console.log(parseInt(AB[0]) + parseInt(AB[1]));
-}
 
-/////////////////////////////////////////////////////////////////
+
+
+
 
 let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
 
@@ -28,3 +25,15 @@ for (let i = 0; i < input.length - 2; i++) {
     
     console.log(parseInt(AB[0]) + parseInt(AB[1]));
 }
+
+
+
+
+
+for(let i = 0; i < inputData.length - 1; i++) {
+    let AB = inputData[i].split(' '); 
+  
+    console.log(parseInt(AB[0]) + parseInt(AB[1]));
+}
+
+/////////////////////////////////////////////////////////////////
