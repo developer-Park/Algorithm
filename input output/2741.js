@@ -37,4 +37,4 @@ for(let i = 1; i <= input; i++) {
 
 }
 
-console.log(A);
+console.log(AA);
