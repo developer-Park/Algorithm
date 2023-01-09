@@ -1,6 +1,9 @@
-from itertools import combinations
-
-def solution(number):    
-    num_combinations = [sum(comb) for comb in list(combinations(number, 3)) if sum(comb) == 0]
-    
-    return len(num_combinations)
+def solution(number):
+    answer = 0
+    d = len(number)
+    for i in range(d - 2):
+        for j in range(i + 1, d - 1):
+            for k in range(j + 1, d):
+                if number[i] + number[j] + number[k] == 0:
+                    answer += 1
+    return answer
