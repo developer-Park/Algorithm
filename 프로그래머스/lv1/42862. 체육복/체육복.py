@@ -20,9 +20,12 @@ def solution(n, lost, reserve):
             if student[i] == 2 and student[j] == 0 and j - i == 1:
                 student[i] -= 1
                 student[j] += 1
-            if student[j] == 2 and student[i] == 0 and j - i ==1:
+            if student[j] == 2 and student[i] == 0 and i - j == 1:
                 student[j] -= 1
                 student[i] += 1
+                student[2] -= 1
+
         if student[i] >= 1:
             answer += 1
+
     return answer
